@@ -29,13 +29,17 @@ To use the API:
 To use the CLI (spawned process):
 
     {
-      "scripts": "bullseye node -r babel/register ./server"
+      "scripts": {
+        "dev": "bullseye node -r babel/register ./server"
+      }
     }
 
 To use the CLI (forked module):
 
     {
-      "scripts": "bullseye ./server.js --arg value --arg2 -- -r babel/register --waitForReady"
+      "scripts": {
+        "dev": "bullseye ./server.js --arg value --arg2 -- -r babel/register --waitForReady"
+      }
     }
 
 When specifying a `.js` file as the command, arguments are parsed a bit
@@ -74,6 +78,25 @@ Example:
 
 Normal processes (i.e. not modules) are terminated/restarted by sending the
 signal `SIGINT`.
+
+## CLI
+
+Usage: bullseye command [command-options]
+
+Options:
+  --help  Show help                                                    [boolean]
+
+Example:
+
+    ./node_modules/.bin/bullseye ./server.js --port 8080 -- -r babel/register --waitForReady
+
+Or in a `package.json` (installed locally):
+
+    {
+      "scripts": {
+        "dev": "bullseye ./server.js --port 8080 -- -r babel/register --waitForReady"
+      }
+    }
 
 ## API
 

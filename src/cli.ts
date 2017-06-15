@@ -4,7 +4,7 @@ import * as bullseye from './index'
 
 if (require.main === module) {
   yargs(process.argv.slice(2))
-    .usage('Usage: $0 command [command-options]')
+    .usage('Usage: bullseye command [command-options]')
     .help()
 
   const argv = process.argv.slice(2)
