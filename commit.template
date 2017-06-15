@@ -1,0 +1,51 @@
+
+
+# Commit Message Guidelines:
+#
+# Short Commits:
+#
+# Short commits are commits without a body. They are typically created by
+# running: `git commit -m "'<type>(<Scope>): <Subject>'"`
+#
+# Where <type> must be one of the following
+# - feat: A new feature
+# - fix: A bug fix
+# - docs: Documentation only changes
+# - style: Changes that do not affect the meaning of the code (white-space,
+#        formatting, missing semi-colons, etc)
+# - refactor: A code change that neither fixes a bug nor adds a feature
+# - perf: A code change that improves performance
+# - test: Adding missing or correcting existing tests
+# - chore: Changes to the build process or auxiliary tools and libraries such as
+#        documentation generation
+#
+# Long Commits:
+#
+# Long commits are commits that have a body. They are typically created by
+# running `git commit` then entering your commit message
+#
+#     <type>:(<Scope>): <Subject>
+#     <BLANK LINE>
+#     <Body>
+#     <BLANK LINE>
+#     <Footer>
+#
+# Where `<Body>` can be a single paragraph or several paragraphs separated by a
+# blank line.
+#
+# It's important that when a new feature is added that has a breaking change to
+# the app as perceived by its users that there be a paragraph in the body with the
+# words `BREAKING CHANGE` (casing is not important).
+#
+# Example:
+#
+#     BREAKING CHANGE: Replace the update() API so that a key is no longer
+#     accepted.
+#
+#     Before:
+#     thing.update(myKey, name)
+#
+#     After:
+#     thing.update(name)
+#
+#

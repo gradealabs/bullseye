@@ -1,0 +1,27 @@
+{
+    "parser": "babel-eslint",
+    "extends": [ "standard" ],
+    "plugins": [
+        "standard",
+        "promise"
+    ],
+    "env": {
+        "node": true,
+        "mocha": true
+    },
+    "parserOptions": {
+        "sourceType": "module",
+        "ecmaVersion": 2016,
+        "ecmaFeatures": {
+            "modules": true,
+            "classes": true,
+            "arrowFunctions": true,
+            "defaultParams": true,
+            "destructuring": true,
+            "experimentalObjectRestSpread": true,
+            "objectLiteralShorthandMethods": true,
+            "objectLiteralShorthandProperties": true,
+            "restParams": true
+        }
+    }
+}
