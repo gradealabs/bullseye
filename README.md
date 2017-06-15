@@ -26,14 +26,22 @@ To use the API:
       })
     }
 
-To use the CLI:
-
-*NOTE: The CLI only accepts running a process via spawn() and not a forked
-node module*
+To use the CLI (spawned process):
 
     {
       "scripts": "bullseye node -r babel/register ./server"
     }
+
+To use the CLI (forked module):
+
+    {
+      "scripts": "bullseye ./server.js --arg value --arg2 -- -r babel/register --waitForReady"
+    }
+
+When specifying a `.js` file as the command, arguments are parsed a bit
+differently. All arguments before `--` are passed to the forked process whereas
+all arguments after `--` are assumed to be `execArgv` arguments, except for
+`--waitForReady`.
 
 ## Graceful Shutdown
 

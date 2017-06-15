@@ -6,19 +6,28 @@ if (require.main === module) {
     .usage('Usage: $0 command [command-options]')
     .help()
 
-  const argv = yargs.argv
+  const argv = process.argv.slice(2)
 
-  if (argv._.length === 0) {
+  if (argv.length === 0) {
     yargs.showHelp()
   } else {
-    const cmd = argv._.slice()
+    const cmd = argv.slice()
     let p: Promise<any> = Promise.resolve()
 
     if (cmd.length) {
       if (cmd[0].endsWith('.js')) {
-        p = bullseye.monitorModule(cmd[0], cmd.slice(1))
+        // server.js --arg --arg -- [execArgv] --waitForReady
+        const k = cmd.indexOf('--')
+        const execArgv = k > 0 ? cmd.slice(k).slice(1) : []
+        const waitForReady = execArgv.includes('--waitForReady')
+        const args = k > 0 ? cmd.slice(0, k) : cmd.slice()
+        p = bullseye.monitorModule(cmd[0], args, {
+          env: process.env,
+          execArgv: execArgv.filter(x => x !== '--waitForReady'),
+          waitForReady
+        })
       } else {
-        p = bullseye.monitor(cmd)
+        p = bullseye.monitor(cmd.join(' '))
       }
 
       p.then(handle => {
