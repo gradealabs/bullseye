@@ -4,7 +4,7 @@ A simple process monitor for fast dev-reload cycles.
 
 ## Quick Start
 
-    npm install gradealabs/bullseye -D
+    npm install @gradealabs/bullseye -D
 
 To use the API:
 
