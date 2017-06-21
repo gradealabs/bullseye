@@ -1,6 +1,6 @@
 {
   "name": "@gradealabs/bullseye",
-  "version": "1.1.2",
+  "version": "1.1.3",
   "description": "A simple process monitor for fast dev-reload cycles",
   "bin": {
     "bullseye": "./lib/cli.js"
@@ -14,7 +14,7 @@
     "build:node": "tsc -p tsconfig.node.json",
     "clean": "widowmaker lib coverage"
   },
-  "keywords": [],
+  "keywords": [ "process", "monitor", "" ],
   "author": "Darren Schnare <dschnare@gradealabs.com>",
   "repository": {
     "type": "git",
