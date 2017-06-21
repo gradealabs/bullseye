@@ -1,6 +1,6 @@
 {
   "name": "@gradealabs/bullseye",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "A simple process monitor for fast dev-reload cycles",
   "bin": {
     "bullseye": "./lib/cli.js"
@@ -15,7 +15,7 @@
     "clean": "widowmaker lib coverage"
   },
   "keywords": [],
-  "author": "Darren Schnare <schnare.d@gmail.com>",
+  "author": "Darren Schnare <dschnare@gradealabs.com>",
   "repository": {
     "type": "git",
     "url": "https://github.com/gradealabs/bullseye"
