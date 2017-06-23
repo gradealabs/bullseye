@@ -21,9 +21,10 @@ To use the API:
 
     // Somewhere else in the code after source code has changed...
     if (serverHandle) {
-      serverHandle.restart(handle => {
-        serverHandle = handle
-      })
+      serverHandle.restart()
+        .then(handle => {
+           serverHandle = handle
+        })
     }
 
 To use the CLI (spawned process):
