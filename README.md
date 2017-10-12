@@ -175,7 +175,7 @@ When `waitReady` is `true`, a module must signal it's ready by sending the
 `ready` message like the following:
 
     if (process.connected) {
-      process.send('ready')
+      process.nextTick(() => process.send('ready'))
     }
 
 Modules have 5 seconds to send this message before bullseye will assume the
