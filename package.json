@@ -1,6 +1,6 @@
 {
   "name": "@gradealabs/bullseye",
-  "version": "1.1.3",
+  "version": "1.1.31",
   "description": "A simple process monitor for fast dev-reload cycles",
   "bin": {
     "bullseye": "./lib/cli.js"
