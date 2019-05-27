@@ -6,4 +6,5 @@ Thumbs.db
 .vscode/launch.json
 node_modules
 .nyc_output
+.sonarlint
 coverage

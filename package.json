@@ -1,6 +1,6 @@
 {
-  "name": "@gradealabs/bullseye",
-  "version": "1.1.31",
+  "name": "@launchfort/bullseye",
+  "version": "1.1.4",
   "description": "A simple process monitor for fast dev-reload cycles",
   "bin": {
     "bullseye": "./lib/cli.js"
@@ -14,44 +14,48 @@
     "build:node": "tsc -p tsconfig.node.json",
     "clean": "widowmaker lib coverage"
   },
-  "keywords": [ "process", "monitor", "" ],
-  "author": "Darren Schnare <dschnare@gradealabs.com>",
+  "keywords": [
+    "process",
+    "monitor",
+    ""
+  ],
+  "author": "Darren Schnare <dschnare@launchfort.com>",
   "repository": {
     "type": "git",
-    "url": "https://github.com/gradealabs/bullseye"
+    "url": "https://github.com/launchfort/bullseye"
   },
   "bugs": {
-    "url": "https://github.com/gradealabs/bullseye/issues"
+    "url": "https://github.com/launchfort/bullseye/issues"
   },
   "license": "MIT",
   "files": [
     "lib"
   ],
   "devDependencies": {
-    "@gradealabs/fs-utils": "2.0.3",
-    "@gradealabs/widowmaker": "2.0.2",
-    "@types/mocha": "2.2.41",
-    "@types/node": "7.0.31",
-    "@types/sinon": "2.3.1",
-    "@types/yargs": "6.6.0",
+    "@launchfort/fs-utils": "2.2.6",
+    "@launchfort/widowmaker": "2.0.5",
+    "@types/mocha": "5.2.6",
+    "@types/node": "12.0.2",
+    "@types/sinon": "7.0.12",
+    "@types/yargs": "13.0.0",
     "babel": "6.23.0",
-    "babel-eslint": "7.2.3",
+    "babel-eslint": "10.0.1",
     "babel-plugin-transform-class-properties": "6.24.1",
-    "babel-plugin-transform-object-rest-spread": "6.23.0",
-    "cross-env": "5.0.1",
-    "eslint": "4.0.0",
-    "eslint-config-standard": "10.2.1",
-    "eslint-plugin-import": "2.3.0",
-    "eslint-plugin-node": "5.0.0",
-    "eslint-plugin-promise": "3.5.0",
-    "eslint-plugin-standard": "3.0.1",
-    "mocha": "3.4.2",
-    "nyc": "11.0.2",
-    "sinon": "2.3.1",
-    "source-map-support": "0.4.15",
-    "ts-node": "3.0.6",
-    "typescript": "2.3.3",
-    "yargs": "8.0.2"
+    "babel-plugin-transform-object-rest-spread": "6.26.0",
+    "cross-env": "5.2.0",
+    "eslint": "5.16.0",
+    "eslint-config-standard": "12.0.0",
+    "eslint-plugin-import": "2.17.3",
+    "eslint-plugin-node": "9.1.0",
+    "eslint-plugin-promise": "4.1.1",
+    "eslint-plugin-standard": "4.0.0",
+    "mocha": "6.1.4",
+    "nyc": "14.1.1",
+    "sinon": "7.3.2",
+    "source-map-support": "0.5.12",
+    "ts-node": "8.2.0",
+    "typescript": "3.4.5",
+    "yargs": "13.2.4"
   },
   "dependencies": {},
   "engines": {
