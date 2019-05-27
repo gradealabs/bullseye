@@ -1,6 +1,6 @@
 {
   "name": "@launchfort/bullseye",
-  "version": "1.1.4",
+  "version": "1.2.0",
   "description": "A simple process monitor for fast dev-reload cycles",
   "bin": {
     "bullseye": "./lib/cli.js"
@@ -14,11 +14,7 @@
     "build:node": "tsc -p tsconfig.node.json",
     "clean": "widowmaker lib coverage"
   },
-  "keywords": [
-    "process",
-    "monitor",
-    ""
-  ],
+  "keywords": [ "process", "monitor", "" ],
   "author": "Darren Schnare <dschnare@launchfort.com>",
   "repository": {
     "type": "git",
@@ -34,10 +30,10 @@
   "devDependencies": {
     "@launchfort/fs-utils": "2.2.6",
     "@launchfort/widowmaker": "2.0.5",
-    "@types/mocha": "5.2.6",
-    "@types/node": "12.0.2",
-    "@types/sinon": "7.0.12",
-    "@types/yargs": "13.0.0",
+    "@types/mocha": "2.2.41",
+    "@types/node": "7.0.31",
+    "@types/sinon": "2.3.1",
+    "@types/yargs": "6.6.0",
     "babel": "6.23.0",
     "babel-eslint": "10.0.1",
     "babel-plugin-transform-class-properties": "6.24.1",
