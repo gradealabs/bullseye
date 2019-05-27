@@ -1,6 +1,6 @@
 {
-  "name": "@gradealabs/bullseye",
-  "version": "1.1.31",
+  "name": "@launchfort/bullseye",
+  "version": "1.1.2",
   "description": "A simple process monitor for fast dev-reload cycles",
   "bin": {
     "bullseye": "./lib/cli.js"
@@ -15,21 +15,21 @@
     "clean": "widowmaker lib coverage"
   },
   "keywords": [ "process", "monitor", "" ],
-  "author": "Darren Schnare <dschnare@gradealabs.com>",
+  "author": "Darren Schnare <dschnare@launchfort.com>",
   "repository": {
     "type": "git",
-    "url": "https://github.com/gradealabs/bullseye"
+    "url": "https://github.com/launchfort/bullseye"
   },
   "bugs": {
-    "url": "https://github.com/gradealabs/bullseye/issues"
+    "url": "https://github.com/launchfort/bullseye/issues"
   },
   "license": "MIT",
   "files": [
     "lib"
   ],
   "devDependencies": {
-    "@gradealabs/fs-utils": "2.0.3",
-    "@gradealabs/widowmaker": "2.0.2",
+    "@launchfort/fs-utils": "2.2.6",
+    "@launchfort/widowmaker": "2.0.5",
     "@types/mocha": "2.2.41",
     "@types/node": "7.0.31",
     "@types/sinon": "2.3.1",

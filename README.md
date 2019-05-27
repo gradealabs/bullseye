@@ -4,11 +4,11 @@ A simple process monitor for fast dev-reload cycles.
 
 ## Quick Start
 
-    npm install @gradealabs/bullseye -D
+    npm install @launchfort/bullseye -D
 
 To use the API:
 
-    import * as bullseye from '@gradealabs/bullseye'
+    import * as bullseye from '@launchfort/bullseye'
 
     let serverHandle = null
     bullseye.monitorModule('./server.js', {
@@ -125,7 +125,7 @@ child process exits or encounters an error.
 
 Example:
 
-    import { monitor } from '@gradealabs/bullseye'
+    import { monitor } from '@launchfort/bullseye'
 
     monitor('node -r babel/register server.js', { env: process.env })
       .then(handle => {
@@ -159,7 +159,7 @@ child process exits or encounters an error.
 
 Example:
 
-    import { monitorModule } from '@gradealabs/bullseye'
+    import { monitorModule } from '@launchfort/bullseye'
 
     monitorModule('server.js', [], {
       env: process.env,
