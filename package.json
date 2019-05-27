@@ -1,6 +1,6 @@
 {
   "name": "@launchfort/bullseye",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "A simple process monitor for fast dev-reload cycles",
   "bin": {
     "bullseye": "./lib/cli.js"
@@ -14,7 +14,11 @@
     "build:node": "tsc -p tsconfig.node.json",
     "clean": "widowmaker lib coverage"
   },
-  "keywords": [ "process", "monitor", "" ],
+  "keywords": [
+    "process",
+    "monitor",
+    ""
+  ],
   "author": "Darren Schnare <dschnare@launchfort.com>",
   "repository": {
     "type": "git",
@@ -50,10 +54,11 @@
     "sinon": "7.3.2",
     "source-map-support": "0.5.12",
     "ts-node": "8.2.0",
-    "typescript": "3.4.5",
+    "typescript": "3.4.5"
+  },
+  "dependencies": {
     "yargs": "13.2.4"
   },
-  "dependencies": {},
   "engines": {
     "node": ">=6.x",
     "npm": ">=3.x"
